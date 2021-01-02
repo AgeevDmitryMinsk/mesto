@@ -1,0 +1,29 @@
+.element__button-like {
+    margin: 0;
+    background-image: url('../../../images/like-button.svg'); /*/images/like-button.svg*/
+    background-color: transparent;
+    width: 21px; /*22px;*/
+    height: 18px; /*19px;*/
+    border: none; /*убрал рамку-обводку вокруг сердечка*/
+    outline: none;
+    padding: 0;
+    margin-right: 17px;
+    transition: opacity .7s ease;
+}
+.element__button-like:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+/*увеличу размер кнопки like в 2 раза с помощью @keyframes:*/
+@keyframes scale {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(3);
+    }
+}
+
+.element__button-like:focus {
+    animation: scale .5s easy 1 reverse backwards;
+}

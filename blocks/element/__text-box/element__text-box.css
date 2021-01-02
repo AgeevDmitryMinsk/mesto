@@ -1,0 +1,9 @@
+.element__text-box {
+    margin: 0;
+    background-color: white;
+    min-height: 80px; /*79px по figma*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 10px 10px;
+}

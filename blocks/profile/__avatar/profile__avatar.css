@@ -1,0 +1,4 @@
+.profile__avatar {
+    max-width: 120px; /* исправил после Pixel-perfect c 127px;*/
+    border-radius: 50%;
+}

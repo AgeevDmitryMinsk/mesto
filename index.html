@@ -1,40 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Агеев Дмитрий, Яндекс.Практикум">
-    <meta name="author" content="Агеев Дмитрий">
-    <title>Mesto</title>
-    <link rel="stylesheet" href="./pages/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Агеев Дмитрий, Яндекс.Практикум">
+  <meta name="author" content="Агеев Дмитрий">
+  <title>Mesto</title>
+  <link rel="stylesheet" href="./pages/index.css">
 
 </head>
+
 <body>
-    <div class="page">
-        <header class="header">
-            <img class="header__logo" src="./images/header-logo.svg" alt="Логотип Место">                    
-        </header>
-        <main>
-          <section class="profile">
-            <div class="profile__info">
-              <img src="./images/image-profile_Jacques-Yves_Cousteau.jpg" alt="Avatar" class="profile__avatar">
-              <div class="profile__info-container">
-                <div class="profile__title-box">
-                  <h1 class="profile__title">Жак-Ив Кусто</h1>
-                  <h3 class="profile__subtitle">Исследователь океана</h3>
-                </div>
-                <button type="button" class="profile__edit-button"></button>
-              </div>
+  <div class="page">
+    <header class="header">
+      <img class="header__logo" src="./images/header-logo.svg" alt="Логотип Место">
+    </header>
+    <main>
+      <section class="profile">
+        <div class="profile__info">
+          <img src="./images/image-profile_Jacques-Yves_Cousteau.jpg" alt="Avatar" class="profile__avatar">
+          <div class="profile__info-container">
+            <div class="profile__title-box">
+              <h1 class="profile__title">Жак-Ив Кусто</h1>
+              <h3 class="profile__subtitle">Исследователь океана</h3>
             </div>
-            <button type="button" class="profile__add-button"></button>
-          </section>
+            <button type="button" class="profile__edit-button"></button>
+          </div>
+        </div>
+        <button type="button" class="profile__add-button"></button>
+      </section>
+      <section>
+        <ul class="elements">
+          <div class="card">
+            <!--Тег <template> содержит содержимое, скрытое от клиента.-->
+            <li class="element">
+              <div class="element__image-box">
+                <img src="./images/Egypt-2.jfif" alt="beautiful place photo Egypt" class="element__image">
+              </div>
+              <div class="element__text-box">
+                <h2 class="element__title">Сфинкс, Гиза, Египет</h2>
+                <button type="button" class="element__button-like"></button>
+              </div>
+            </li>
+          </div>
+
+          <div class="card">
+            <!--Тег <template> содержит содержимое, скрытое от клиента.-->
+            <li class="element">
+              <div class="element__image-box">
+                <img src="./images/Paris.jfif" alt="beautiful place photo Paris" class="element__image">
+              </div>
+              <div class="element__text-box">
+                <h2 class="element__title">Париж, Франция</h2>
+                <button type="button" class="element__button-like"></button>
+              </div>
+            </li>
+          </div>
+
+          <div class="card">
+            <!--Тег <template> содержит содержимое, скрытое от клиента.-->
+            <li class="element">
+              <div class="element__image-box">
+                <img src="./images/Frankfurt.jfif" alt="beautiful place photo Egypt" class="element__image">
+              </div>
+              <div class="element__text-box">
+                <h2 class="element__title">Франкфурт, Германия</h2>
+                <button type="button" class="element__button-like"></button>
+              </div>
+            </li>
+          </div>
+
+          <div class="card">
+            <!--Тег <template> содержит содержимое, скрытое от клиента.-->
+            <li class="element">
+              <div class="element__image-box">
+                <img src="./images/New York.jfif" alt="beautiful place photo Egypt" class="element__image">
+              </div>
+              <div class="element__text-box">
+                <h2 class="element__title">Нью Йорк, США</h2>
+                <button type="button" class="element__button-like"></button>
+              </div>
+            </li>
+          </div>
+
+          <div class="card">
+            <!--Тег <template> содержит содержимое, скрытое от клиента.-->
+            <li class="element">
+              <div class="element__image-box">
+                <img src="./images/Ostankino.jfif" alt="beautiful place photo Ostankino" class="element__image">
+              </div>
+              <div class="element__text-box">
+                <h2 class="element__title">Останкино, Москва, РФ</h2>
+                <button type="button" class="element__button-like"></button>
+              </div>
+            </li>
+          </div>
 
 
+          <div class="card">
+            <!--Тег <template> содержит содержимое, скрытое от клиента.-->
+            <li class="element">
+              <div class="element__image-box">
+                <img src="./images/Лукашенко-с-автоматом-GTA.jpeg" alt="beautiful place photo Belarus"
+                  class="element__image">
+              </div>
+              <div class="element__text-box">
+                <h2 class="element__title">Минск, Беларусь 2020</h2>
+                <button type="button" class="element__button-like"></button>
+              </div>
+            </li>
+          </div>
 
 
-        </main>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
+    </footer>
+  </div>
 
-
+  <section class="popup">
+    <!--popup_opened открывает popup-->
+    <div class="popup__container">
+      <button type="button" class="popup__button-close"></button>
+      <h2 class="popup__title">Редактировать профиль</h2>
+      <input type="text" placeholder="Имя" class="popup__input popup__name" />
+      <input type="text" placeholder="О себе" class="popup__input popup__occupation" />
+      <button class="popup__button popup__button_save">
+        Сохранить
+      </button>
     </div>
+  </section>
+  <script src="./script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,22 @@
+.popup__container {
+    background: #FFFFFF;
+    color: #000;
+    width: 430px;
+    height: 330px;
+    box-sizing: border-box;    
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 34px 36px 37px 36px;
+    position: relative; /*чтобы крестик при своим абсолютном позиционировании не вылетал за экран,
+                        а был привязан к блоку popup-container*/
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .popup__container {
+        width: 282px;                
+        height: 322px;
+        padding: 25px 22px 20px;       
+    }
+}
