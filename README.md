@@ -24,3 +24,5 @@
 + также не забыл [оптимизировать картинки](https://tinypng.com/), чтобы сайт загружался быстрее.
 
 [Посмотрите мой проект MESTO на GitHub Pages.](https://ageevdmitryminsk.github.io/mesto/index.html)
+
+* C НОВЫМ 2021 ГОДОМ!!!
