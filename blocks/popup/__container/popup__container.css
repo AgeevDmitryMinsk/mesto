@@ -3,7 +3,7 @@
     color: #000;
     width: 430px;
     height: 330px;
-    box-sizing: border-box;    
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
@@ -15,8 +15,8 @@
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .popup__container {
-        width: 282px;                
+        width: 282px;
         height: 322px;
-        padding: 25px 22px 20px;       
+        padding: 25px 22px 20px;
     }
 }
