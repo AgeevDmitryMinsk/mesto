@@ -8,16 +8,21 @@
     grid-template-rows: repeat(2, 1fr);
     column-gap: 17px;
     row-gap: 20px;
+    max-width: 880px;
+    margin: auto; /*Элементы до 1го ревью были не оцентрованы.*/
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 601px) and (max-width: 1023px) { 
+    /* после 1го ревью изменил с 1279px на 1023, чтобы устранить замечание: "Слишком 
+    рано переходят на 2 плитки, разрешение еще десктопное. Подберите оптимальное, 
+    но и не слишком большое.  http://joxi.ru/KAxea5JCZxpLKr"*/
     .elements{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 600px) {
     .elements{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);

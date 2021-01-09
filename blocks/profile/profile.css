@@ -5,6 +5,8 @@
     justify-content: space-between;
     padding-top: 40px; /*после pixel-perfect исправил с 36px на 40px;*/
     padding-bottom: 50px; /*после pixel-perfect исправил с 47px на 50px;*/
+    max-width: 880px;    
+    margin: auto;
 }
 
 @media screen and (min-width: 320px) and (max-width: 1023px) {
@@ -12,7 +14,7 @@
     padding-top: 42px; /*после pixel-perfect исправил с 38px на 42px;*/
     flex-direction: column;
     align-items: flex-start;
-    width: 282px;
+    max-width: 282px; /*после 1го ревью исправил с width на max-width*/
     padding-bottom: 0;
 }
 }

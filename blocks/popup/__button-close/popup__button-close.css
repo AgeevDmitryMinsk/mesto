@@ -1,14 +1,17 @@
 .popup__button-close {
     position: absolute;
-    right: -36px;
+    right: -50px;
     top: -50px;
-    width: 45px;
-    height: 45px;
+    width: 60px;
+    height: 60px;
     background-image: url('../../../images/popup_button_close.svg'); /*/images/popup_button_close.svg*/
     background-color: transparent;
-    border: none;
+    border: none; /*Убрал у кнопки рамку после 1го ревью.*/
+    background-size: cover; /*Масштабирует изображение с сохранением пропорций так, 
+                            чтобы его ширина или высота равнялась ширине или высоте блока.*/
     outline: none;
     padding: 0;
+    margin: 0;
     cursor: pointer;
     transition: opacity .7s ease;
 }
@@ -23,7 +26,8 @@
         top: -50px;
         width: 35px;
         height: 35px;
-        background-size: cover; /*Масштабирует изображение с сохранением пропорций так, 
+        /*перенес из @media после 1го ревью, тк оно будет применятся всегда:
+        background-size: cover; /*Масштабирует в @media изображение с сохранением пропорций так, 
                             чтобы его ширина или высота равнялась ширине или высоте блока.*/
     }
 }

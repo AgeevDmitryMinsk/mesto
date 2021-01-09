@@ -1,8 +1,9 @@
 .popup__container {
     background: #FFFFFF;
     color: #000;
-    width: 430px;
-    height: 330px;
+    max-width: 430px; /*исправил после 1го ревью с width на max-width и добавил width: 100%; */
+    width: 100%; 
+    min-height: 330px; /*исправил после 1го ревью с height на min-height*/
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -15,8 +16,8 @@
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .popup__container {
-        width: 282px;
-        height: 322px;
+        max-width: 282px; /*исправил после 1го ревью с width на max-width и добавил width: 100%; */
+        min-height: 322px; /*исправил после 1го ревью с height на min-height*/
         padding: 25px 22px 20px;
     }
 }

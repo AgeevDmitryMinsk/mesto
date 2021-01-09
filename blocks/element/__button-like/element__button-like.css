@@ -1,8 +1,19 @@
+/*увеличу размер кнопки like в 2 раза с помощью @keyframes:*/
+@keyframes scale {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(2);
+    }
+}
+
 .element__button-like {
     margin: 0;
     background-image: url('../../../images/like-button.svg'); /*/images/like-button.svg*/
+    background-repeat: no-repeat;
     background-color: transparent;
-    width: 21px; /*22px;*/
+    width: 22px; /*после 1го ревью исправил с 21px на 22, чтобы не было обрезки*/
     height: 18px; /*19px;*/
     border: none; /*убрал рамку-обводку вокруг сердечка*/
     outline: none;
@@ -14,16 +25,8 @@
     opacity: .5;
     cursor: pointer;
 }
-/*увеличу размер кнопки like в 2 раза с помощью @keyframes:*/
-@keyframes scale {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(3);
-    }
-}
+
 
 .element__button-like:focus {
-    animation: scale .5s easy 1 reverse backwards;
+    animation: scale .5s 1 normal both ease /*easy исправил на ease и всё закарботало - Владимир Шевченко, ревьюер, 03/01/21*/
 }

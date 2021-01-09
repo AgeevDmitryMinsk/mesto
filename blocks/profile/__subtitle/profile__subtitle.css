@@ -19,6 +19,6 @@
         line-height: 17px;
         text-align: center;
         padding-top: 7px;
-        padding-left: 6px; /*добавил после проверки pixel-perfect*/        
+        padding-left: 16px; /*добавил после проверки pixel-perfect*/        
     }
 }

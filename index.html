@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru"> <!-- исправил после 1го ревью с "en" на "ru", проверял Владимир Шевченко-->
 
 <head>
   <meta charset="UTF-8">
@@ -32,87 +32,68 @@
       </section>
       <section>
         <ul class="elements">
-          <div class="card">
+          
             <!--Тег <template> содержит содержимое, скрытое от клиента.-->
             <li class="element">
-              <div class="element__image-box">
+              <figure class="element__image-box">
                 <img src="./images/Egypt-2.jfif" alt="beautiful place photo Egypt" class="element__image">
-              </div>
+              </figure>
               <div class="element__text-box">
                 <h2 class="element__title">Сфинкс, Гиза, Египет</h2>
                 <button type="button" class="element__button-like"></button>
               </div>
             </li>
-          </div>
 
-          <div class="card">
-            <!--Тег <template> содержит содержимое, скрытое от клиента.-->
             <li class="element">
-              <div class="element__image-box">
+              <figure class="element__image-box">
                 <img src="./images/Paris.jfif" alt="beautiful place photo Paris" class="element__image">
-              </div>
+              </figure>
               <div class="element__text-box">
                 <h2 class="element__title">Париж, Франция</h2>
                 <button type="button" class="element__button-like"></button>
               </div>
             </li>
-          </div>
 
-          <div class="card">
-            <!--Тег <template> содержит содержимое, скрытое от клиента.-->
             <li class="element">
-              <div class="element__image-box">
+              <figure class="element__image-box">
                 <img src="./images/Frankfurt.jfif" alt="beautiful place photo Egypt" class="element__image">
-              </div>
+              </figure>
               <div class="element__text-box">
                 <h2 class="element__title">Франкфурт, Германия</h2>
                 <button type="button" class="element__button-like"></button>
               </div>
             </li>
-          </div>
 
-          <div class="card">
-            <!--Тег <template> содержит содержимое, скрытое от клиента.-->
             <li class="element">
-              <div class="element__image-box">
+              <figure class="element__image-box">
                 <img src="./images/New York.jfif" alt="beautiful place photo Egypt" class="element__image">
-              </div>
+              </figure>
               <div class="element__text-box">
                 <h2 class="element__title">Нью Йорк, США</h2>
                 <button type="button" class="element__button-like"></button>
               </div>
             </li>
-          </div>
 
-          <div class="card">
-            <!--Тег <template> содержит содержимое, скрытое от клиента.-->
             <li class="element">
-              <div class="element__image-box">
+              <figure class="element__image-box">
                 <img src="./images/Ostankino.jfif" alt="beautiful place photo Ostankino" class="element__image">
-              </div>
+              </figure>
               <div class="element__text-box">
                 <h2 class="element__title">Останкино, Москва, РФ</h2>
                 <button type="button" class="element__button-like"></button>
               </div>
             </li>
-          </div>
 
-
-          <div class="card">
-            <!--Тег <template> содержит содержимое, скрытое от клиента.-->
             <li class="element">
-              <div class="element__image-box">
+              <figure class="element__image-box">
                 <img src="./images/Minsk_Belarus" alt="beautiful place photo Belarus"
                   class="element__image">
-              </div>
+              </figure>
               <div class="element__text-box">
                 <h2 class="element__title">Минск, Беларусь 2020</h2>
                 <button type="button" class="element__button-like"></button>
               </div>
             </li>
-          </div>
-
-
         </ul>
       </section>
     </main>
@@ -126,11 +107,12 @@
     <div class="popup__container">
       <button type="button" class="popup__button-close"></button>
       <h2 class="popup__title">Редактировать профиль</h2>
-      <input type="text" placeholder="Имя" class="popup__input popup__name" />
-      <input type="text" placeholder="О себе" class="popup__input popup__occupation" />
-      <button class="popup__button popup__button_save">
-        Сохранить
-      </button>
+      <form class="form">
+        <input type="text" placeholder="Имя" class="popup__input  popup__input_popup-name">
+        <input type="text" placeholder="О себе" class="popup__input popup__input_popup-occupation">
+        <button type="submit" class="popup__button-save">Сохранить</button>
+    </form>
+    
     </div>
   </section>
   <script src="./script.js"></script>
