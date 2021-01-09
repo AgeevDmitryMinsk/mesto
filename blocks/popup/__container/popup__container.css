@@ -2,7 +2,7 @@
     background: #FFFFFF;
     color: #000;
     max-width: 430px; /*исправил после 1го ревью с width на max-width и добавил width: 100%; */
-    width: 100%; 
+    width: 100%;
     min-height: 330px; /*исправил после 1го ревью с height на min-height*/
     box-sizing: border-box;
     display: flex;

@@ -5,7 +5,7 @@
     justify-content: space-between;
     padding-top: 40px; /*после pixel-perfect исправил с 36px на 40px;*/
     padding-bottom: 50px; /*после pixel-perfect исправил с 47px на 50px;*/
-    max-width: 880px;    
+    max-width: 880px;
     margin: auto;
 }
 

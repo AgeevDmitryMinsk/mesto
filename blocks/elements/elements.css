@@ -1,6 +1,5 @@
 .elements {
-    list-style: none; /*убрал точку из списков*/
-    margin: 0;
+    list-style: none; /*убрал точку из списков*/    
     padding: 0;
     box-sizing: border-box;
     display: grid;
