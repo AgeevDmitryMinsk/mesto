@@ -24,7 +24,7 @@
     }
 }
 
-@media screen and (max-width: 600px) { /* после 2го ревью убрал: (min-width: 320px) and*/
+@media screen and (max-width: 630px) { /* после 2го ревью убрал: (min-width: 320px) and*/
     .elements{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
