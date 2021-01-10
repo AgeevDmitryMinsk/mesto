@@ -3,31 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b443b5f5-20b0-4463-8814-601f40464efd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/element/__button-like/element__button-like.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/element/__button-like/element__button-like.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/element/element.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/element/element.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/elements/elements.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/elements/elements.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/footer/__copyright/footer__copyright.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/footer/__copyright/footer__copyright.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/footer/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/footer/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/header/__logo/header__logo.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/header/__logo/header__logo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/header/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/page/page.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/page/page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__button-close/popup__button-close.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__button-close/popup__button-close.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__button/_save/popup__button_save.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__button/popup__button.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__container/popup__container.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__container/popup__container.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__input/popup__input.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__input/popup__input.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__name/popup__name.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__occupation/popup__occupation.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/profile/__avatar/profile__avatar.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/__avatar/profile__avatar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/profile/__edit-button/profile__edit-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/__edit-button/profile__edit-button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/profile/__info-container/profile__info-container.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/__info-container/profile__info-container.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/profile/__subtitle/profile__subtitle.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/__subtitle/profile__subtitle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/profile/__title-box/profile__title-box.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/__title-box/profile__title-box.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/profile/__title/profile__title.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/__title/profile__title.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/profile/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +57,8 @@
       <workItem from="1609578352229" duration="2623000" />
       <workItem from="1609701988014" duration="7272000" />
       <workItem from="1610112742219" duration="382000" />
-      <workItem from="1610190060335" duration="1882000" />
+      <workItem from="1610190060335" duration="3067000" />
+      <workItem from="1610265515972" duration="623000" />
     </task>
     <servers />
   </component>

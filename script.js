@@ -6,8 +6,8 @@ let closeButton = document.querySelector('.popup__button-close');// выбира
 let saveButton = document.querySelector('.popup__button-save'); // выбираем в проекте класс кнопки "сохранить popup"
 let profileTitle = document.querySelector('.profile__title'); // выбираем в проекте класс заголовка секции "Профиль"
 let profileSubtitle = document.querySelector('.profile__subtitle'); // выбираем в проекте класс подзаголовка секции "Профиль"
-let popupName = document.querySelector('.popup__input_popup-name'); //выбираем в проекте класс первого поля ввода "Имя" в popup
-let popupOccupation = document.querySelector('.popup__input_popup-occupation'); //выбираем в проекте класс первого поля ввода "О себе" в popup
+let popupName = document.querySelector('.popup__input_name'); //выбираем в проекте класс первого поля ввода "Имя" в popup
+let popupOccupation = document.querySelector('.popup__input_occupation'); //выбираем в проекте класс первого поля ввода "О себе" в popup
 let formElement = document.querySelector('.form'); //выбираем в проекте класс "form" 
 
 

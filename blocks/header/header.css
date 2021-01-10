@@ -6,7 +6,7 @@
     padding-bottom: 37px;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) { /*убрал после 2го ревью: (min-width: 320px)*/
     .header {
         padding-bottom: 28px;
     }

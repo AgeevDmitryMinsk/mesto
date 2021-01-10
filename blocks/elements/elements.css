@@ -11,8 +11,8 @@
     margin: auto; /*Элементы до 1го ревью были не оцентрованы.*/
 }
 
-@media screen and (min-width: 601px) and (max-width: 1023px) { 
-    /* после 1го ревью изменил с 1279px на 1023, чтобы устранить замечание: "Слишком 
+@media screen and (min-width: 601px) and (max-width: 900px) { 
+    /* после 1го ревью изменил с 1279px на 900, чтобы устранить замечание: "Слишком 
     рано переходят на 2 плитки, разрешение еще десктопное. Подберите оптимальное, 
     но и не слишком большое.  http://joxi.ru/KAxea5JCZxpLKr"*/
     .elements{
@@ -21,7 +21,7 @@
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 600px) {
+@media screen and (max-width: 600px) { /* после 2го ревью убрал: (min-width: 320px) and*/
     .elements{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);

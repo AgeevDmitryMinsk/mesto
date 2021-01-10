@@ -8,11 +8,11 @@
     background-color: rgba(0, 0, 0, .5); /*полупрозрачный черный*/
     display: none; /*flex; перенес в popup_opened */
     justify-content: center;
-    padding: 195px 425px 0;
+    padding: 195px 0 0; /* убрал правый и левый padding после 2го ревью*/
     align-items: flex-start;
     font-family: 'Inter', Arial, sans-serif;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 600px) { /*and (min-width: 320px)*/
     .popup {        
         padding: 123px 19px 0;       
     }

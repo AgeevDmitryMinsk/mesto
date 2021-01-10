@@ -32,8 +32,10 @@
 @import url(../blocks/popup/__button-close/popup__button-close.css);/*popup__button-close*/
 @import url(../blocks/popup/__title/popup__title.css); /*popup__title*/
 @import url(../blocks/popup/__input/popup__input.css);/*popup__input*/
-@import url(../blocks/popup/_popup-name/popup__input_popup-name.css);/*popup__input_popup-name*/
-@import url(../blocks/popup/_popup-occupation/popup__input_popup-occupation.css);/*popup__input_popup-occupation*/
+
+/*после 2го ревью убрал пычтые селекторы по рекомендации: "Пустые селекторы и медиа, можно не оставлять. Также удалить их пути импорта." */
+/*@import url(../blocks/popup/_popup-name/popup__input_popup-name.css);/*popup__input_popup-name*/ 
+/*@import url(../blocks/popup/_popup-occupation/popup__input_popup-occupation.css);/*popup__input_popup-occupation*/
 /*@import url(../blocks/popup/__button-save/_save/popup__button_save.css);/*popup__button_save*/
 
 @import url(../blocks/popup/__button-save/popup__button-save.css); /*popup__button-save.css*/
