@@ -3,7 +3,7 @@
 ### Проектная работа №4.
 #### Исполнитель                                  *Агеев Дмитрий* 
 
-<p align="center"><img src="https://scontent.fmsq2-1.fna.fbcdn.net/v/t1.0-9/127142444_1292068024474820_2603593254457549792_n.jpg?_nc_cat=102&ccb=2&_nc_sid=174925&_nc_eui2=AeFXGGTQfxI4NkbUgnPHKOIEC708gKFaF1oLvTyAoVoXWo7l_kphk0y12abzj5r3aoeVHfb0UVakq_HxHqkQmKlx&_nc_ohc=tMgOQDkaya4AX_Fv0Ke&_nc_ht=scontent.fmsq2-1.fna&oh=8e39dc792c6094997120afc8bc415a70&oe=601631FC" width="200" alt="Агеев Дмитрий"></p>
+<p align="center"><img src="https://scontent.fmsq2-1.fna.fbcdn.net/v/t1.0-9/127142444_1292068024474820_2603593254457549792_n.jpg?_nc_cat=102&ccb=2&_nc_sid=174925&_nc_eui2=AeFXGGTQfxI4NkbUgnPHKOIEC708gKFaF1oLvTyAoVoXWo7l_kphk0y12abzj5r3aoeVHfb0UVakq_HxHqkQmKlx&_nc_ohc=57EGW658I-MAX8OhEEB&_nc_ht=scontent.fmsq2-1.fna&oh=d28dc7fb4789d3e2533eacc5b48db7f6&oe=6041B37C" width="200" alt="Агеев Дмитрий"></p>
 
 ##### Использованные технологии:
 * JS, popup
