@@ -30,21 +30,25 @@
         </div>
         <button type="button" class="profile__add-button"></button>
       </section>
+
       <section>
         <ul class="elements">
-          
-            <!--Тег <template> содержит содержимое, скрытое от клиента.-->
+          <template class="card"> <!--Тег <template> содержит содержимое, скрытое от клиента.-->
             <li class="element">
               <figure class="element__image-box">
-                <img src="./images/Egypt-2.jfif" alt="beautiful place photo Egypt" class="element__image">
+                <img src="#" alt="beautiful place photo" class="element__image"> <!--фото карточек подгрузим сюда из JS ./scripts/initial-cards.js-->
+                <button type="button" class="element__remove-button">
+                  <img src="./images/element-removeButton.svg" alt="Удалить">
+                </button>
               </figure>
               <div class="element__text-box">
-                <h2 class="element__title">Сфинкс, Гиза, Египет</h2>
+                <h2 class="element__title"><!--названия подгрузим сюда из JS ./scripts/initial-cards.js--></h2>
                 <button type="button" class="element__button-like"></button>
               </div>
             </li>
+          </template>
 
-            <li class="element">
+          <!--  <li class="element">
               <figure class="element__image-box">
                 <img src="./images/Paris.jfif" alt="beautiful place photo Paris" class="element__image">
               </figure>
@@ -93,12 +97,12 @@
                 <h2 class="element__title">Минск, Беларусь 2020</h2>
                 <button type="button" class="element__button-like"></button>
               </div>
-            </li>
+            </li> -->
         </ul>
       </section>
     </main>
     <footer class="footer">
-      <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
+      <p class="footer__copyright">&copy; 2020 Mesto Russia Ageev Dmitry</p>
     </footer>
   </div>
 
@@ -115,7 +119,8 @@
     
     </div>
   </section>
-  <script src="./script.js"></script>
+  <script src="./scripts/initial-cards.js"></script>
+  <script src="./scripts/index.js"></script>
 </body>
 
 </html>
