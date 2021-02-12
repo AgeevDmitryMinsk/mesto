@@ -29,4 +29,6 @@
 
 [Посмотрите мой проект MESTO на GitHub Pages.](https://ageevdmitryminsk.github.io/mesto/index.html)
 
+https://ageevdmitryminsk.github.io/mesto/index.html
+
 * C днем влюбленных ♥♥♥ 14 февраля!!!
