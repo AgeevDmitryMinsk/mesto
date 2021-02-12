@@ -1,8 +1,6 @@
 .element {
-    margin: auto; /*исправил с параметра 0 на auto, тк было замечание, что "Элементы не оцентрованы". Владимир Шевченко, ревьюер, 03/01/21 */
-    box-sizing: border-box;
-    max-width: 282px;
-    border-radius: 10px;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 282px;
+  border-radius: 10px;
 }
-
-

@@ -1,15 +1,11 @@
 .profile__info {
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
 }
 
-@media screen and (max-width: 900px) { /*после 3го ревью исправил 767px на 900 чтобы устранить
-    замечание: "Элементы не должны липнуть к краям. "*/
-    /*убрал после 2го ревью: and (min-width: 320px)*/
-    
-    /*убрал полсе 2го ревью: and (min-width: 320px)"*/
-    .profile__info {
-        flex-direction: column;
-    }
+@media screen and (max-width: 1023px) {
+  .profile__info {
+    flex-direction: column;
+  }
 }

@@ -1,33 +1,25 @@
 .elements {
-    list-style: none; /*убрал точку из списков*/
-    padding: 0;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    column-gap: 17px;
-    row-gap: 20px;
-    max-width: 880px;
-    margin: auto; /*Элементы до 1го ревью были не оцентрованы.*/
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 17px;
+  row-gap: 20px;
 }
 
-@media screen and (max-width: 900px) { 
-    /*после 3го ревью убрал and (min-width: 601px) чтобы устранить замечание: 
-    "Можно не указывать min, а оставить только max. Как только разрешение дойдет
-     до следующей точки, свойства перебьются теми свойствами, которые находятся ниже." */
-    /* после 1го ревью изменил с 1279px на 900, чтобы устранить замечание: "Слишком 
-    рано переходят на 2 плитки, разрешение еще десктопное. Подберите оптимальное, 
-    но и не слишком большое.  http://joxi.ru/KAxea5JCZxpLKr"*/
-    .elements{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-}
-
-@media screen and (max-width: 630px) { /* после 2го ревью убрал: (min-width: 320px) and*/
-    .elements{
+@media screen and (max-width: 767px) {
+  .elements {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
-}
+  }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .elements {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}

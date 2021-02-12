@@ -1,14 +1,5 @@
 .profile__avatar {
-    max-width: 120px; /* исправил после Pixel-perfect c 127px;*/
-    border-radius: 50%;
-    object-fit: cover; /* добавил после 1го ревью чтобы: "Изображение может терять свои 
-    пропорции. Возможным решением является использование CSS-свойств object-fit 
-    и object-position,   https://developer.mozilla.org/ru/docs/Web/CSS/object-fit"*/
-    object-position: center;    
-}
-
-@media screen and (max-width: 767px) { /*and (min-width: 320px)*/
-.profile__avatar {
-margin-left: 20px; /*исправил после Pixel-perfect*/
-}
+  max-width: 120px;
+  max-height: 120px;
+  border-radius: 120px;
 }

@@ -1,43 +1,53 @@
-@import url(../vendor/normalize.css);
-@import url(../vendor/fonts/inter.css); /*Директорию fonts и все ее содержимое принято располагать в папке vendor Владимир Шевченко, ревьюер 04/12*/
+@import url("../vendor/normalize.css");
+@import url("../vendor/fonts/fonts.css");
 
-@import url(../blocks/page/page.css);
-@import url(../blocks/header/header.css);
-@import url(../blocks/header/__logo/header__logo.css); /*header__logo*/
+@import url("../blocks/project-area/project-area.css");
+@import url("../blocks/page/page.css");
 
-@import url(../blocks/profile/profile.css);/*profile*/
-@import url(../blocks/profile/__info/profile__info.css);/*profile__info*/
-@import url(../blocks/profile/__avatar/profile__avatar.css);/*profile__avatar*/
-@import url(../blocks/profile/__info-container/profile__info-container.css);/*__info-container*/
-@import url(../blocks/profile/__title-box/profile__title-box.css);/*__title-box*/
-@import url(../blocks/profile/__title/profile__title.css);/*profile__title*/
-@import url(../blocks/profile/__subtitle/profile__subtitle.css);/*profile__subtitle*/
-@import url(../blocks/profile/__edit-button/profile__edit-button.css);/*profile__edit-button*/
-@import url(../blocks/profile/__add-button/profile__add-button.css);/*profile__add-button*/
+@import url("../blocks/header/header.css");
+@import url("../blocks/logo/logo.css");
 
-@import url(../blocks/elements/elements.css);/*elements*/
-@import url(../blocks/element/element.css);/*element*/
-@import url(../blocks/element/__image-box/element__image-box.css);/*element__image-box*/
-@import url(../blocks/element/__image/element__image.css);/*element__image*/
-@import url(../blocks/element/__text-box/element__text-box.css);/*element__text-box*/
-@import url(../blocks/element/__title/element__title.css);/*__title*/
-@import url(../blocks/element/__button-like/element__button-like.css);/*element__button-like*/
+@import url("../blocks/profile/profile.css");
+@import url("../blocks/profile/__info/profile__info.css");
+@import url("../blocks/profile/__avatar/profile__avatar.css");
+@import url("../blocks/profile/__info-container/profile__info-container.css");
+@import url("../blocks/profile/__title-box/profile__title-box.css");
+@import url("../blocks/profile/__title/profile__title.css");
+@import url("../blocks/profile/__subtitle/profile__subtitle.css");
+@import url("../blocks/profile/__edit-button/profile__edit-button.css");
+@import url("../blocks/profile/__add-button/profile__add-button.css");
 
-@import url(../blocks/footer/footer.css);/*footer*/
-@import url(../blocks/footer/__copyright/footer__copyright.css);/*footer__copyright*/
+@import url("../blocks/elements/elements.css");
+@import url("../blocks/element/element.css");
+@import url("../blocks/element/__image-box/element__image-box.css");
+@import url("../blocks/element/__image/element__image.css");
+@import url("../blocks/element/__remove-button/element__remove-button.css");
+@import url("../blocks/element/__text-box/element__text-box.css");
+@import url("../blocks/element/__title/element__title.css");
+@import url("../blocks/element/__button/element__button-like.css");
+@import url("../blocks/element/__button/_active/element__button-like_active.css");
 
-@import url(../blocks/popup/popup.css);/*popup*/
-@import url(../blocks/popup/_opened/popup_opened.css); /*popup_opened*/
-@import url(../blocks/popup/__container/popup__container.css);/*popup__container*/
-@import url(../blocks/popup/__button-close/popup__button-close.css);/*popup__button-close*/
-@import url(../blocks/popup/__title/popup__title.css); /*popup__title*/
-@import url(../blocks/popup/__input/popup__input.css);/*popup__input*/
+@import url("../blocks/footer/footer.css");
+@import url("../blocks/footer/__copyright/footer__copyright.css");
 
-/*после 2го ревью убрал пычтые селекторы по рекомендации: "Пустые селекторы и медиа, можно не оставлять. Также удалить их пути импорта." */
-/*@import url(../blocks/popup/_popup-name/popup__input_popup-name.css);/*popup__input_popup-name*/ 
-/*@import url(../blocks/popup/_popup-occupation/popup__input_popup-occupation.css);/*popup__input_popup-occupation*/
-/*@import url(../blocks/popup/__button-save/_save/popup__button_save.css);/*popup__button_save*/
-
-@import url(../blocks/popup/__button-save/popup__button-save.css); /*popup__button-save.css*/
-
-@import url(../blocks/element/__button-like/_active/element__button-like_active.css)
+@import url("../blocks/popup/popup.css");
+@import url("../blocks/popup/_active/popup_active.css");
+@import url("../blocks/popup/_place/popup_place_image-popup.css");
+@import url("../blocks/popup/__container/popup__container.css");
+@import url("../blocks/popup/__container/_place/popup__container_place_add-element.css");
+@import url("../blocks/popup/__container/_place/popup__container_place_image-popup.css");
+@import url("../blocks/popup/__button-close/popup__button-close.css");
+@import url("../blocks/popup/__button-close/_place/popup__button-close_place_add-element.css");
+@import url("../blocks/popup/__button-close/_place/popup__button-close_place_image-popup.css");
+@import url("../blocks/popup/__button-image/popup__button-image.css");
+@import url("../blocks/popup/__form-box/popup__form-box.css");
+@import url("../blocks/popup/__form-box/_place/popup__form-box_place_add-element.css");
+@import url("../blocks/popup/__content-box/popup__content-box.css");
+@import url("../blocks/popup/__image/popup__image.css");
+@import url("../blocks/popup/__caption/popup__caption.css");
+@import url("../blocks/popup/__title/popup__title.css");
+@import url("../blocks/popup/__title/_place/popup__title_place_add-element.css");
+@import url("../blocks/popup/__form/popup__form.css");
+@import url("../blocks/popup/__input/popup__input.css");
+@import url("../blocks/popup/__button-save/popup__button-save.css");
+@import url("../blocks/popup/__button-save/_place/popup__button-save_place_add-element.css");

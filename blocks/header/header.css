@@ -1,13 +1,11 @@
 .header {
-    max-width: 880px;
-    margin: auto;
-    box-sizing: border-box;
-    border-bottom: 1px solid #545454;
-    padding-bottom: 37px;
+  box-sizing: border-box;
+  border-bottom: solid rgba(84, 84, 84, .7) 1px;
+  padding-bottom: 37px;
 }
 
-@media screen and (max-width: 767px) { /*убрал после 2го ревью: (min-width: 320px)*/
-    .header {
-        padding-bottom: 28px;
-    }
+@media screen and (max-width: 767px) {
+  .header {
+    padding-bottom: 28px;
+  }
 }

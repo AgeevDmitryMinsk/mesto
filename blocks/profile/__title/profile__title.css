@@ -1,28 +1,28 @@
-.profile__title {     /* Жак-Ив Кусто */
-    margin: 0;
-    max-width: 341px; /*было width: 294px;*/
-    font-style: normal;
-    font-weight: 500;
-    font-size: 42px;
-    line-height: 48px; /* or 114% */
-    /*При редактировании данных профиля из попапа пользователь тоже может ввести длинный текст. 
-    Чтобы реализовать переполнение блока с появляющимся многоточием в конце, используйте такой
-    набор свойств CSS (3 строчки):*/
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+.profile__title {
+  margin: 0;
+  max-width: 341px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 48px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-@media screen and (max-width: 900px) { /*после 3го ревью исправил 767px на 900 чтобы устранить
-    замечание: "Элементы не должны липнуть к краям. "*/
-    /*убрал после 2го ревью: and (min-width: 320px)*/
-    /*1023 and (min-width: 320px)*/
-    .profile__title { /* Жак-Ив Кусто */
-        max-width: 206px; /* добавил max-width вместо width*/
-        font-size: 27px;
-        line-height: 33px;
-        text-align: center;
-        padding-top: 26px;
-        padding-left: 15px;
-    }
+@media screen and (max-width: 1023px) {
+  .profile__title {
+    font-size: 27px;
+    line-height: 33px;
+    padding-top: 30px;
+    text-align: center;
+    max-width: 219px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .profile__title {
+    font-size: 34px;
+    line-height: 42px;
+  }
 }

@@ -1,34 +1,20 @@
-.popup__input {    
-    padding: 0 0 5px 0;
-    outline: none;
-    border: none;
-    border-bottom: 1px solid black;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-    margin-top: 30px; /*после 1го ревью перенес из .popup__name
-    И там же, используя псевдоклассы, сбросить или у первого 
-    элемента по типу или у последнего, тут уже как вы решите или указать нужные вам. */
-    max-width: 358px;
-    width: 100%;    
+.popup__input {
+  width: 358px;
+  box-sizing: border-box;
+  margin: 3px 41px 30px 36px;
+  border: 0;
+  border-bottom: solid rgba(0, 0, 0, 0.2) 1px;
+  outline: none;
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
 }
 
-/*я убрал лишний псевдокласс после 2го ревью, чтоьы устранить замечание Владимира Шевченко:
-"Добавил еще один инпут и верстка выглядит не очень. Нужно найти другое решение"*/
-/*.popup__input:last-of-type { 
-/*    margin-top: 30px;}*/
-
-
-.popup__input:focus {
-     /*после 2го ревью добавил ":focus", чтобы устарнить замечание:
-     "Инпут в фокусе должен выделятся. https://developer.mozilla.org/en-US/docs/Web/CSS/:focus"*/
-    cursor: text;
-    opacity: .6;
-    border-bottom-color: green;
-    /* после 3го ревью добавил border-bottom-color, чтобы устарнить замечание: 
-    "Свойства указанные тут, работают только на пустом инпуте, когда он заполнен. 
-    Попробуйте поменять цвет границы border-bottom-color у ипнута и т.д, 
-    чтобы стало более очевидным. http://joxi.ru/n2Y8jzXsbJ63em"*/
+@media screen and (max-width: 767px) {
+  .popup__input {
+    width: 238px;
+    margin-right: 22px;
+    margin-left: 22px;
+  }
 }

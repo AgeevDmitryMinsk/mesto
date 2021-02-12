@@ -1,23 +1,20 @@
 .popup__container {
-    background: #FFFFFF;
-    color: #000;
-    max-width: 430px; /*исправил после 1го ревью с width на max-width и добавил width: 100%; */
-    width: 100%;
-    min-height: 330px; /*исправил после 1го ревью с height на min-height*/
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-    padding: 0 36px 37px 36px;
-    position: relative; /*чтобы крестик при своим абсолютном позиционировании не вылетал за экран,
-                        а был привязан к блоку popup-container*/
+  margin: 0;
+  max-width: 500px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-left: 35px;
+  padding-bottom: 80px;
 }
 
-@media screen and (max-width: 600px) { /* убрал после 2го ревью:767px and (min-width: 320px)*/
-    .popup__container {
-        max-width: 282px; /*исправил после 1го ревью с width на max-width и добавил width: 100%; */
-        min-height: 322px; /*исправил после 1го ревью с height на min-height*/
-        padding: 0 22px 20px;
-    }
+@media screen and (max-width: 767px) {
+  .popup__container {
+    max-width: 282px;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding-top: 28px;
+    padding-bottom: 15px;
+  }
 }
