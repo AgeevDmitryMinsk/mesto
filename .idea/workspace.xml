@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b443b5f5-20b0-4463-8814-601f40464efd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/profile-popup/profile-popup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup/__button-save/_place/popup__button-save_place_add-element.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__button/_place/popup__button_place_add-element.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup/__button-save/popup__button-save.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__button/popup__button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup/__input/popup__input.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__input/popup__input.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
@@ -48,8 +50,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Yandex_Praktikum\Mesto\mesto\blocks\popup\__button\_place" />
+      <recent name="F:\Yandex_Praktikum\Mesto\mesto\blocks\popup\__button\__button_disabled" />
+      <recent name="F:\Yandex_Praktikum\Mesto\mesto\blocks\popup\__button" />
+      <recent name="F:\Yandex_Praktikum\Mesto\mesto\blocks\popup\__error\_visible" />
       <recent name="F:\Yandex_Praktikum\Mesto\mesto\blocks\profile\profile-popup" />
-      <recent name="F:\Yandex_Praktikum\Mesto\mesto\scripts" />
     </key>
   </component>
   <component name="RunManager">
@@ -93,7 +98,12 @@
       <workItem from="1613028218286" duration="11495000" />
       <workItem from="1613120120447" duration="1635000" />
       <workItem from="1613130213141" duration="590000" />
-      <workItem from="1613139528399" duration="11367000" />
+      <workItem from="1613139528399" duration="14239000" />
+      <workItem from="1613400477973" duration="660000" />
+      <workItem from="1613460572054" duration="4620000" />
+      <workItem from="1613719780721" duration="594000" />
+      <workItem from="1613892455287" duration="1317000" />
+      <workItem from="1613902995261" duration="20161000" />
     </task>
     <servers />
   </component>
