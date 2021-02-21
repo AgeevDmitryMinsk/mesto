@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b443b5f5-20b0-4463-8814-601f40464efd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__button-save/_place/popup__button-save_place_add-element.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__button/_place/popup__button_place_add-element.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__button-save/popup__button-save.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__button/popup__button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__input/popup__input.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__input/popup__input.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup/__input/__input-error/popup__input-error.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__input/__input-error/popup__input-error.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +98,7 @@
       <workItem from="1613460572054" duration="4620000" />
       <workItem from="1613719780721" duration="594000" />
       <workItem from="1613892455287" duration="1317000" />
-      <workItem from="1613902995261" duration="20161000" />
+      <workItem from="1613902995261" duration="21423000" />
     </task>
     <servers />
   </component>
