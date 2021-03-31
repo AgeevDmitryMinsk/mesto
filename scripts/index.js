@@ -114,7 +114,7 @@ function  openPopupPreview (evt)  { //*** */ объявляем функцию, 
 
 
 
-// Ёу start
+
 
 
 //Функция добавления карточки в DOM
@@ -134,10 +134,10 @@ initialCards.forEach((item) => {
 
 
 
-// Ёу finish
 
 
-/* => ёё
+
+/* => перенес рефакторингом в => Class Card
 function removeCard(evt) { // объявляем функцию, реализующую удаление карточки из списка;
   const targetElement = evt.target.closest('.element'); // присваиваем переменной класс карточки, по кнопке удаления которой кликнул пользователь;
   targetElement.remove(); // удаляем карточку, по кнопке которой кликнул пользователь;
@@ -176,7 +176,7 @@ function composeListCard () { // объявляем функцию, формир
   cardItemsList.append(...listCards); // вставляем в проект полученный массив и раскладываем его на аргументы;
 }
 
-composeListCard(); // вызываем функцию для формирования карточек при загрузке страницы;
+composeListCard(); // -  вызываем функцию для формирования карточек при загрузке страницы
 */
 
 function openEditPopup() { // объявляем функцию, реализующую открытие "Попап-окна";
@@ -268,7 +268,7 @@ const validationConfig = {
 };
 
 
-//Создание экземпляров форм и их валидация
+//Создаем экземпляры форм и их валидацию
 const validationAddCard = new FormValidator(validationConfig, formAddCard);
 validationAddCard.enableValidation();
 

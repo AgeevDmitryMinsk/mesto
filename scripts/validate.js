@@ -1,3 +1,5 @@
+/* перенес рефакторингом в => Class FormValodator
+
 const showInputError = (form, input, configObj) => { // реализуем функцию, выводящую ошибку при невалидном поле ввода формы, с тремя параметрами: класс формы, класс поля ввода, объект настроек configObj;
   const error = form.querySelector(`#${input.id}-error`); // присваиваем переменной идентификатор текстового контейнера соответсвующего поля ввода формы;
   error.textContent = input.validationMessage; // присваиваем текстовому содержимому  найденного контейнера текст стандартной ошибки поля ввода;
@@ -62,5 +64,5 @@ validationConfig({
   inputErrorClass: 'popup__input_type_error',
   errorClass: 'popup__error_visible' // т.е. configObj.errorClass = 'popup__error_visible'
 });
-
+*/
 
