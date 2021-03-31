@@ -40,7 +40,7 @@ const setEventListener = (form, configObj) => { // реализуем функц
   });
 }
   
-const enableValidation = (configObj) => { // реализуем функцию, осуществляющую проверку всех форм проекта; с аргументом в виде объекта configObj
+const validationConfig = (configObj) => { // реализуем функцию, осуществляющую проверку всех форм проекта; с аргументом в виде объекта configObj
   const forms = document.querySelectorAll(configObj.formSelector); // формируем из форм проекта Node List; т.е configObj.formSelector = '.popup__form'
   
   forms.forEach(form => { // перебираем формы методом forEach,
@@ -54,12 +54,13 @@ const enableValidation = (configObj) => { // реализуем функцию, 
     });
 }
 
-enableValidation({ // вызываем функцию enableValidation с аргументом в виде объекта configObj с настройками форм из техзадания проектной работы№6;
-    formSelector: '.popup__form', // т.е configObj.formSelector = '.popup__form'  - 2шт
-    inputSelector: '.popup__input', // т.е configObj.inputSelector = '.popup__form' - 4 шт
-    submitButtonSelector: '.popup__button', // - 2 кнопки сохранить, по 1 в каждом попапе
-    inactiveButtonClass: 'popup__button_disabled',
-    inputErrorClass: 'popup__input_type_error',
-    errorClass: 'popup__error_visible' // т.е. configObj.errorClass = 'popup__error_visible'
-  });
+validationConfig({ 
+  formSelector: '.popup__form', // т.е configObj.formSelector = '.popup__form'  - 2шт
+  inputSelector: '.popup__input', // т.е configObj.inputSelector = '.popup__form' - 4 шт
+  submitButtonSelector: '.popup__button', // - 2 кнопки сохранить, по 1 в каждом попапе
+  inactiveButtonClass: 'popup__button_disabled',
+  inputErrorClass: 'popup__input_type_error',
+  errorClass: 'popup__error_visible' // т.е. configObj.errorClass = 'popup__error_visible'
+});
+
 
