@@ -3,7 +3,7 @@ export default class Card {
         this._name = cardData.name;
         this._image = cardData.link;
         this._cardSelector = cardSelector;
-        this._openPopupPreview = functionOpenPopup;
+        this._openPopupPreview = functionOpenPopup; //пробрасываю колбэк открытия карточки в класс, а не создаю логику открытия внутри класса, тем самым дублируя код! - КРУТО!
     }
   
     _getTemplateCard() {

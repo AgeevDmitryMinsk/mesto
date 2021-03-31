@@ -1,9 +1,10 @@
 import Card from './Card.js';
 import FormValidator from './FormValidator.js';
 
-
+//Константы желательно выносить в отдельный файл - constants.js - Rolan Ibragimov, ревьюер 7ая ПР - учту )!
 const initialCards = [ // присваиваем переменной массив, содержащий объекты с данными, необходимыми для формирования карточек с изображением;
                        //с атрибутами name и link
+                       
   {
     name: 'Египет',
     link: 'https://images.unsplash.com/photo-1602791191774-d34f0367f1e9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80'
