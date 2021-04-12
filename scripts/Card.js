@@ -7,7 +7,10 @@ export default class Card {
     }
   
     _getTemplateCard() {
-        return document.querySelector(this._cardSelector).content.cloneNode(true);
+        return document
+            .querySelector(this._cardSelector) // найдём в document template-элемент с классом this._cardSelector = `.card`,
+            .content // извлечём его содержимое,
+            .cloneNode(true); //клонируем его и вернём
 
     }
   
