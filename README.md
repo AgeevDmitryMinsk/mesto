@@ -30,11 +30,14 @@
 которые можно использовать, не беспокоясь об авторских правах.
 + также не забыл [оптимизировать картинки](https://tinypng.com/), чтобы сайт загружался быстрее.
 
-[Посмотрите мой проект MESTO на GitHub Pages.](https://ageevdmitryminsk.github.io/mesto/index.html)
+[Посмотрите мой проект MESTO на GitHub Pages.](https://ageevdmitryminsk.github.io/mesto/src/index.html)
+
+(https://ageevdmitryminsk.github.io/mesto/index.html)
 
 https://ageevdmitryminsk.github.io/mesto/index.html
+https://ageevdmitryminsk.github.io/mesto/src/index.html
 
-* C 1ым апреля ♥♥♥!!!
+* C 1ым мая ♥♥♥!!!
 
 ##                  *2021*                     ЯндексПрактикум рулит) 🏎
 
