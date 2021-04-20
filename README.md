@@ -32,9 +32,6 @@
 
 [Посмотрите мой проект MESTO на GitHub Pages.](https://ageevdmitryminsk.github.io/mesto/src/index.html)
 
-(https://ageevdmitryminsk.github.io/mesto/index.html)
-
-https://ageevdmitryminsk.github.io/mesto/index.html
 https://ageevdmitryminsk.github.io/mesto/src/index.html
 
 * C 1ым мая ♥♥♥!!!
