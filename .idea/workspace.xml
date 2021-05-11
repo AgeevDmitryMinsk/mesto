@@ -3,43 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="b443b5f5-20b0-4463-8814-601f40464efd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/prettier" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/prettier.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/prettier.ps1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/bin-prettier.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/doc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/esm/parser-angular.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/esm/parser-babel.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/esm/parser-espree.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/esm/parser-flow.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/esm/parser-glimmer.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/esm/parser-graphql.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/esm/parser-html.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/esm/parser-markdown.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/esm/parser-meriyah.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/esm/parser-postcss.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/esm/parser-typescript.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/esm/parser-yaml.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/esm/standalone.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/parser-angular.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/parser-babel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/parser-espree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/parser-flow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/parser-glimmer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/parser-graphql.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/parser-html.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/parser-markdown.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/parser-meriyah.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/parser-postcss.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/parser-typescript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/parser-yaml.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/standalone.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/prettier/third-party.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/componets/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/componets/FormValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormValidator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,15 +45,16 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Yandex_Praktikum\Mesto\mesto\src" />
+      <recent name="F:\Yandex_Praktikum\Mesto\mesto" />
       <recent name="F:\Yandex_Praktikum\Mesto\mesto\src\componets" />
       <recent name="F:\Yandex_Praktikum\Mesto\mesto\pages" />
       <recent name="F:\Yandex_Praktikum\Mesto\mesto\blocks\popup\__button\_place" />
-      <recent name="F:\Yandex_Praktikum\Mesto\mesto\blocks\popup\__button\__button_disabled" />
     </key>
   </component>
   <component name="RunManager">
@@ -146,7 +115,20 @@
       <workItem from="1618931494164" duration="946000" />
       <workItem from="1618933021979" duration="6245000" />
       <workItem from="1619086662306" duration="77000" />
-      <workItem from="1619086776324" duration="610000" />
+      <workItem from="1619086776324" duration="5358000" />
+      <workItem from="1619093328724" duration="15825000" />
+      <workItem from="1619541070073" duration="4527000" />
+      <workItem from="1619808831630" duration="4022000" />
+      <workItem from="1619855766565" duration="11483000" />
+      <workItem from="1619900526329" duration="2183000" />
+      <workItem from="1620218638374" duration="1879000" />
+      <workItem from="1620286381002" duration="23752000" />
+      <workItem from="1620628787191" duration="305000" />
+      <workItem from="1620629180697" duration="5749000" />
+      <workItem from="1620710745426" duration="11374000" />
+      <workItem from="1620725795269" duration="125000" />
+      <workItem from="1620745693075" duration="4818000" />
+      <workItem from="1620753060751" duration="7901000" />
     </task>
     <task id="LOCAL-00001" summary="внес изменения в read.me 20-04-21">
       <created>1618940524324</created>

@@ -1,3 +1,27 @@
+//Объект со свойствами селекторами для валидатора форм
+export const formConfig = {
+    // inputSelector: '.popup__input',
+    // submitButtonSelector: '.popup__button',
+    // inactiveButtonClass: 'popup__button_disabled',
+    // inputErrorClass: 'popup__input-error',
+    formSelector: '.popup__form', // т.е configObj.formSelector = '.popup__form'  - 2шт
+    inputSelector: '.popup__input', // т.е configObj.inputSelector = '.popup__form' - 4 шт
+    submitButtonSelector: '.popup__button', // - 2 кнопки сохранить, по 1 в каждом попапе
+    inactiveButtonClass: 'popup__button_disabled',
+    inputErrorClass: 'popup__input_type_error',
+    errorClass: 'popup__error_visible' // т.е. configObj.errorClass = 'popup__error_visible'
+
+}
+
+export const clickEditButton = document.querySelector('#edit-profile'); //Переменная для кнопки редактирования профиля
+export const newUsername = document.querySelector('#username'); //Переменная для инпута с именем пользователя
+export const newBio = document.querySelector('#bio'); //Переменная для инпута с биографией
+export const formEditProfile = document.querySelector('.popup__form-box'); //Переменная для формы редактирования профиля
+export const clickAddPhoto = document.querySelector('#add-element'); //Переменная для кнопки добавления фото
+export const formAddPhoto = document.querySelector('.popup__form_place_add-element'); //Переменная для формы редактирования профиля
+export const photoGallery = document.querySelector('.elements'); //Переменная для фотопотока пользователя
+
+
 //Константы желательно выносить в отдельный файл - constants.js - Rolan Ibragimov, ревьюер 7ая ПР - учту )!
 export const initialCards = [ // присваиваем переменной массив, содержащий объекты с данными, необходимыми для формирования карточек с изображением;
     //с атрибутами name и link
@@ -29,74 +53,3 @@ export const initialCards = [ // присваиваем переменной м�
 ];
 
 
-export const templateElement = document.querySelector('.card'); // выбираем в проекте класс шаблона секции изображений;
-console.log(templateElement)
-
-
-export const buttonOpenInfo = document.querySelector('.profile__edit-button'); // выбираем в проекте класс кнопки "Войти"; buttonOpenInfo => editButton
-
-
-export const popupEditInfo = document.querySelector('.profile-popup'); // выбираем в проекте класс "Попап-окна"; profilePopup => popupEditInfo
-console.log(popupEditInfo)
-console.log(popupEditInfo.textContent)
-//и добавьте слово profile во все элементы, которые с ним связаны, а то они слишком нейтрально зазываются
-//Это попап Профиля, поэтому нужно более конкретно назвать переменную:  const profilePopup = document.querySelector('.profile-popup');
-// и искать его нужно по конкретному Селектору (классу profile-popup)
-// иначе Вы сейчас находите первый попавшийся Попап - Gennadiy Barsegyan, ревьюер - 1е ревью 5я ПР
-
-export const closeButton = popupEditInfo.querySelector('.popup__button-close'); // выбираем в проекте класс кнопки "Закрыть";
-//Крестик нужно искать внутри попапа Профиля, а то класс popup__button-close является общим классом для всех Крестиков в проекте
-// и сейчас Вы просто находите первый попавшийся Крестик - если поменять верстку, то приложение сломается
-// и добавьте слово profile во все элементы, которые с ним связаны, а то они слишком нейтрально зазываются - Gennadiy Barsegyan, ревьюер, 1е ревью 5я ПР
-
-export const formProfileInfo  = popupEditInfo.querySelector('.popup__form'); // выбираем в проекте класс формы в "Попап-окне"; form => formProfileInfo
-console.log(formProfileInfo)
-console.log(formProfileInfo.textContent)
-//форму нужно искать внутри попапа Профиля, а то класс popup__form является общим для всех форм в проекте - Gennadiy Barsegyan, ревьюер, 1е ревью 5я ПР
-
-export const inputUserName = formProfileInfo.querySelector('.popup__input_data_name'); // выбираем в проекте класс первого поля ввода формы в "Попап-окне"; inputName => inputUserName
-console.log(inputUserName)
-console.log(inputUserName.textContent)
-export const inputUserAbout = formProfileInfo.querySelector('.popup__input_data_about-yourself'); // выбираем в проекте класс второго поля ввода формы в "Попап-окне"; inputAbout =>inputUserAbout
-
-//const buttonSubmitInfo = formProfileInfo.querySelector('.popup__button');
-
-
-
-export const userName = document.querySelector('.profile__title'); // выбираем в проекте класс заголовка секции "Профиль"; profileTitle => userName
-console.log(userName)
-console.log(userName.textContent)
-export const userDescription = document.querySelector('.profile__subtitle'); // выбираем в проекте класс подзаголовка секции "Профиль"; profileSubtitle => userDescription
-console.log(userDescription)
-console.log(userDescription.textContent)
-export const cardItemsList = document.querySelector('.elements'); // выбираем класс списка изображений в шаблоне; cardsContainer => cardItemsList
-console.log(cardItemsList)
-
-export const buttonOpenAddCard = document.querySelector('.profile__add-button'); // выбираем в проекте класс кнопки "Добавить"; addButton => buttonOpenAddCard
-
-export const popupAddCard = document.querySelector('.popup_content_add-element'); // выбираем в проекте модификатор "Попап-окна"; addElementPopup => popupAddCard
-export const closeButtonAddElementPopup = document.querySelector('.popup__button-close_place_add-element'); // выбираем в проекте модификатор кнопки "Закрыть";
-export const inputNameCard = document.querySelector('.popup__input_data_title'); // выбираем в проекте класс поля ввода "Название" формы в попап-окне "Добавить элемент"; inputTitle => inputNameCard
-console.log(inputNameCard)
-
-export const inputLinkCard = document.querySelector('.popup__input_data_link'); // выбираем в проекте класс второго поля ввода "Ссылка" формы в попап-окне "Добавить элемент"; inputLink => inputLinkCard
-console.log(inputLinkCard)
-
-
-export const formAddCard  = document.querySelector('.popup__form_place_add-element'); // выбираем в проекте модификатор формы в "Попап-окне"; newElementForm => formAddCard
-console.log(formAddCard)
-console.log(formAddCard.textContent)
-//const buttonSubmitCard = formAddCard.querySelector('.popup__button');
-
-export const popupPreview = document.querySelector('.popup_place_image-popup'); // выбираем в проекте класс "Попап-окна"; imagePopup => popupPreview
-console.log(popupPreview)
-
-export const popupPreviewImage = document.querySelector('.popup__image'); // выбираем в проекте класс изображения "Попап-окна"; photoImagePopup => popupPreviewImage
-export const popupPreviewFigcaption = document.querySelector('.popup__caption'); // выбираем в проекте класс подписи к изображению "Попап-окна"; captionImagePopup => popupPreviewFigcaption
-
-
-export const closeButtonImagePopup = document.querySelector('.popup__button-close_place_image-popup'); // выбираем в проекте класс кнопки "Закрыть";
-export const overlay = document.querySelector('.project-area'); // выбираем в проекте класс тега <body>;
-console.log(overlay)
-
-export const addPopupForm = document.querySelector('.popup__form_place_add-element'); // выбираем в проекте класс формы в "Попап-окне" добавления нового элемента;
