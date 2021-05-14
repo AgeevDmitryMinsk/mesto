@@ -95,9 +95,9 @@ const popupEditProfileInfo = new PopupWithForm (
 
 popupEditProfileInfo.setEventListeners();
 
-const formEditProfileValidated = new FormValidator(formConfig, formEditProfile);
+const formEditProfileValidator = new FormValidator(formConfig, formEditProfile);
 
-formEditProfileValidated.enableValidation();
+formEditProfileValidator.enableValidation();
 
 clickEditButton.addEventListener('click', () => {
 
@@ -106,7 +106,7 @@ clickEditButton.addEventListener('click', () => {
   newBio.value = currentUserInfo.bio;
 
 
-  formEditProfileValidated.deactivateButton();
+  formEditProfileValidator.deactivateButton();
   popupEditProfileInfo.open()
   deleteErrorMessege(formProfileInfo, formConfig);
 })
