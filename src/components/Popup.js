@@ -1,7 +1,6 @@
-export default class Popup { // класс Popup, который отвечает за открытие и закрытие попапа. Этот класс:
-                             //Принимает в конструктор единственный параметр — селектор попапа.
+export default class Popup {
     constructor(popupSelector) {
-        this._popup = document.querySelector(popupSelector)  //'.popup_active'
+        this._popup = document.querySelector(popupSelector)
         this._handleEscClose = this._handleEscClose.bind(this) // в конструкторе нужно создать функцию с привязанным контекстом
         //this._closePopupByOverlayClick = this._closePopupByOverlayClick.bind(this) // и далее использовать ее при добавлении и удалении слушателя
         //Михаил Зятьков:  привязывать this через bind нужно раньше, не в самом callback, а в конструкторе нужно создать функцию с
@@ -15,19 +14,16 @@ export default class Popup { // класс Popup, который отвечае�
     close() {
         this._popup.classList.remove('popup_active');
         document.removeEventListener('keydown', this._handleEscClose)
-
     }
 
-    _handleEscClose (evt){ // приватный метод _handleEscClose, который содержит логику закрытия попапа клавишей Esc.
-      //  const activePopup = document.querySelector('.popup_active'); // находим в проекте класс активного попап-окна;
-        if (evt.key === 'Escape') { // если нажата клавиша Esc -
-            this.close(); // вызываем функцию closePopup;
+    _handleEscClose (evt){
+        if (evt.key === 'Escape') {
+            this.close();
         }
-
     }
 
 
-    setEventListeners() { //публичный метод setEventListeners, который добавляет слушатель клика иконке закрытия попапа.
+    setEventListeners() {
         this._popup.querySelector('.popup__button-close').addEventListener('click', () =>{
             this.close()
         });

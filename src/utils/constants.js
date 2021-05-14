@@ -1,9 +1,5 @@
 //Объект со свойствами селекторами для валидатора форм
 export const formConfig = {
-    // inputSelector: '.popup__input',
-    // submitButtonSelector: '.popup__button',
-    // inactiveButtonClass: 'popup__button_disabled',
-    // inputErrorClass: 'popup__input-error',
     formSelector: '.popup__form', // т.е configObj.formSelector = '.popup__form'  - 2шт
     inputSelector: '.popup__input', // т.е configObj.inputSelector = '.popup__form' - 4 шт
     submitButtonSelector: '.popup__button', // - 2 кнопки сохранить, по 1 в каждом попапе
@@ -20,12 +16,20 @@ export const formEditProfile = document.querySelector('.popup__form-box'); //П�
 export const clickAddPhoto = document.querySelector('#add-element'); //Переменная для кнопки добавления фото
 export const formAddPhoto = document.querySelector('.popup__form_place_add-element'); //Переменная для формы редактирования профиля
 export const photoGallery = document.querySelector('.elements'); //Переменная для фотопотока пользователя
+export const popupEditInfo = document.querySelector('.profile-popup');
+export const formProfileInfo = popupEditInfo.querySelector('.popup__form');
+export const selectorPopupFullViewPhoto = '.popup_place_image-popup';
+export const selectorPopupContentAddElement = '.popup_content_add-element';
+export const selectorPopupForm = '.popup__form';
+export const userNameSelector = '.profile__title';
+export const bioSelector = '.profile__subtitle';
+export const cardSelector = '#photo';
+export const profilePopupSelector = '.profile-popup'
+export const formContainerSelector = '.profileform__container'
 
 
-//Константы желательно выносить в отдельный файл - constants.js - Rolan Ibragimov, ревьюер 7ая ПР - учту )!
-export const initialCards = [ // присваиваем переменной массив, содержащий объекты с данными, необходимыми для формирования карточек с изображением;
-    //с атрибутами name и link
 
+export const initialCards = [
     {
         name: 'Египет',
         link: 'https://images.unsplash.com/photo-1602791191774-d34f0367f1e9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80'

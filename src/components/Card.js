@@ -1,6 +1,5 @@
 export default class Card {
 
-//Конструктор с данными карточки и селектором template-а
     constructor( { data, handleCardClick }, cardSelector) {
         this._name = data.name;
         this._image = data.link;
@@ -9,7 +8,6 @@ export default class Card {
         this._handleCardClick = handleCardClick;
     }
 
-//Приватный метод создания карточки
     _getTemplate() {
         return document.querySelector(this._cardSelector)
             .content
@@ -17,7 +15,6 @@ export default class Card {
             .cloneNode(true);
     }
 
-//Приватный метод для слушателя клика по кнопке лайка
     _likeButtonClicked() {
         this._element
             .querySelector('.element__button-like')
@@ -25,15 +22,13 @@ export default class Card {
             .toggle('element__button-like_active');
     }
 
-//Приватный метод для слушателя удаления
     _deleteButtonClicked() {
         this._element.remove();
         this._element = null;
     }
 
-//Приватный метод для слушателей событий
-    _setEventListeners() {
 
+    _setEventListeners() {
         this._element.querySelector('.element__button-like').addEventListener('click', () => {
             this._likeButtonClicked();
         });
@@ -46,15 +41,13 @@ export default class Card {
         });
     }
 
-    /*Публичный метод, который возвращает полностью работоспособный
-    наполненный данными элемент карточки*/
-
     generateCard() {
         this._element = this._getTemplate();
         this._setEventListeners();
+        this._elementImage = this._element.querySelector('.element__image')
+        this._elementImage.src = this._image;
+        this._elementImage.alt = this._imageAlt;
         this._element.querySelector('.element__title').textContent = this._name;
-        this._element.querySelector('.element__image').src = this._image;
-        this._element.querySelector('.element__image').alt = this._imageAlt;
 
         return this._element;
     }
