@@ -22,6 +22,15 @@ export default class FormValidator {
         this._errorMessege.textContent = '';
     }
 
+
+    deleteErrorMessage(formItem) {
+        this._formItem = formItem
+        const errorList = Array.from(this._formItem.querySelectorAll(`.${this._inputErrorClass}`));
+        errorList.forEach((errorItem) => {
+            this._hideInputError(this._formItem, errorItem, this._inputErrorClass, this._errorClass);
+        });
+    }
+
     _checkInputValidity(inputElement) {
         this._inputElement = inputElement;
         this._errorMessege = this._formElement.querySelector(`#${this._inputElement.id}-error`);

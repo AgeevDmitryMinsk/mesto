@@ -78,7 +78,7 @@ popupAddPhotoForm.setEventListeners();
 clickAddPhoto.addEventListener ('click', () => {
   formAddCardValidator.deactivateButton();
   popupAddPhotoForm.open();
-  deleteErrorMessege(formAddPhoto, formConfig);
+    formAddCardValidator.deleteErrorMessage(formAddPhoto, formConfig);
 })
 
 const userinfo = new UserInfo(userNameSelector, bioSelector);
@@ -108,17 +108,8 @@ clickEditButton.addEventListener('click', () => {
 
   formEditProfileValidator.deactivateButton();
   popupEditProfileInfo.open()
-  deleteErrorMessege(formProfileInfo, formConfig);
+    formEditProfileValidator.deleteErrorMessage(formProfileInfo, formConfig);
 })
 
-const hideInputError = (formElement, inputElement, {inputErrorClass}) => {
-    inputElement.classList.remove(inputErrorClass);
-}
 
-const deleteErrorMessege = (formItem, {inputErrorClass, errorClass}) => {
-    const errorList = Array.from(formItem.querySelectorAll(`.${inputErrorClass}`));
-    errorList.forEach((errorItem) => {
-        hideInputError(formItem, errorItem, {inputErrorClass, errorClass});
-    });
-}
 

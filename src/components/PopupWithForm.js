@@ -30,10 +30,6 @@ export default class PopupWithForm extends Popup{
 
     close () {
         this._form.reset();
-        this._form.inputErrorClass
-            .forEach ((inputError) => {
-                inputError.textContent = '';
-            });
         super.close();
     }
 }
