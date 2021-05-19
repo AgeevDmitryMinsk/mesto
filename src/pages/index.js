@@ -81,13 +81,13 @@ clickAddPhoto.addEventListener ('click', () => {
     formAddCardValidator.deleteErrorMessage(formAddPhoto, formConfig);
 })
 
-const userinfo = new UserInfo(userNameSelector, bioSelector);
+const userInfo = new UserInfo(userNameSelector, bioSelector);
 
 const popupEditProfileInfo = new PopupWithForm (
     profilePopupSelector,
     (values) => {
       const data = {username: values.username, bio: values.bio}
-      userinfo.setUserInfo(data.username, data.bio)
+      userInfo.setUserInfo(data.username, data.bio)
       popupEditProfileInfo.close();
     },
     formContainerSelector
@@ -101,7 +101,7 @@ formEditProfileValidator.enableValidation();
 
 clickEditButton.addEventListener('click', () => {
 
-  const currentUserInfo = userinfo.getUserInfo();
+  const currentUserInfo = userInfo.getUserInfo();
   newUsername.value = currentUserInfo.username;
   newBio.value = currentUserInfo.bio;
 
