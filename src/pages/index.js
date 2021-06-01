@@ -6,6 +6,7 @@ import Section from '../components/Section.js';
 import PopupWithForm from "../components/PopupWithForm.js";
 import PopupWithImage from "../components/PopupWithImage.js";
 import UserInfo from "../components/UserInfo.js";
+import Api from "../components/Api";
 import {
     initialCards,
     clickEditButton,
@@ -112,4 +113,23 @@ clickEditButton.addEventListener('click', () => {
 })
 
 
+// для теста:
+fetch('https://swapi.nomoreparties.co/people')
+    .then((res) => {
+        console.log(res, `привет`); // если всё хорошо, получили ответ
+    })
+    .catch((err) => {
+        console.log('Ошибка. Запрос не выполнен');
+    });
+
+fetch('https://api.kanye.rest')
+    .then((res) => {
+        return res.json(); // возвращаем результат работы метода и идём в следующий then
+    })
+    .then((data) => {
+        console.log(data, `привет2`); // если мы попали в этот then, data — это объект
+    })
+    .catch((err) => {
+        console.log('Ошибка. Запрос не выполнен');
+    });
 

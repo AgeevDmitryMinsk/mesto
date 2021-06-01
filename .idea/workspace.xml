@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b443b5f5-20b0-4463-8814-601f40464efd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PopupWithForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupWithForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../презентация для Веры" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Mesto_ChillinXXX_ПР-9/mesto" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -132,7 +132,12 @@
       <workItem from="1621064124300" duration="3946000" />
       <workItem from="1621105158202" duration="587000" />
       <workItem from="1621151607733" duration="1387000" />
-      <workItem from="1621409548562" duration="1587000" />
+      <workItem from="1621409548562" duration="1990000" />
+      <workItem from="1621851335496" duration="3944000" />
+      <workItem from="1621933004308" duration="1185000" />
+      <workItem from="1622183062908" duration="752000" />
+      <workItem from="1622541346847" duration="1872000" />
+      <workItem from="1622551583075" duration="813000" />
     </task>
     <task id="LOCAL-00001" summary="внес изменения в read.me 20-04-21">
       <created>1618940524324</created>
