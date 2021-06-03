@@ -1,152 +1,129 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Агеев Дмитрий, Яндекс.Практикум">
-  <meta name="author" content="Агеев Дмитрий">
-  <title>Mesto</title>
-<!--  <link rel="stylesheet" href="pages/index.css">-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Агеев Дмитрий, Яндекс.Практикум">
+    <meta name="author" content="Агеев Дмитрий">
+    <title>Mesto Russia - Главная</title>
 </head>
-
 <body class="project-area">
-  <div class="page">
-    <header class="header">
-<!--      <img src="images/header-logo.svg" alt="Место" class="logo">-->
-      <img src="<%=require('./images/header-logo.svg')%>" alt="Место" class="logo">
-
-    </header>
-
-    <main>
-      <section class="profile">
-        <div class="profile__info">
-<!--          <img src="images/profile-avatar.jpg" alt="Аватар" class="profile__avatar">-->
-          <img src="<%=require('./images/profile-avatar.jpg')%>" alt="Аватар" class="profile__avatar">
-
-
-          <div class="profile__info-container">
-            <div class="profile__title-box">
-              <h1 class="profile__title">Жак-Ив Кусто</h1>
-              <p class="profile__subtitle">Исследователь океана</p>
+<header class="header project-area__section-position">
+    <img src="<%=require('./images/logo.svg')%>" alt="Лого проекта Mesto Russia" class="header__logo">
+</header>
+<main class="content project-area__section-position">
+    <section class="profile">
+        <div class="profile__all-user-info">
+            <div class="profile__avatar">
+                <img src="#" alt="Фотография профиля" class="profile__avatar-image">
+                <div class="profile__avatar-edit-button"></div>
             </div>
-            <button type="button" id="edit-profile" class="profile__edit-button"></button>
-          </div>
+            <div class="profile__info">
+                <div class="profile__username-editing">
+                    <h1 class="profile__username"></h1>
+                    <button type="button" id="edit-profile" class="profile__edit-button"
+                            aria-label="Редактировать профиль"></button>
+                </div>
+                <p class="profile__bio"></p>
+            </div>
         </div>
-        <button type="button" id="add-element" class="profile__add-button"></button>
-      </section>
+        <button type="button" class="profile__add-button" id="add-element" aria-label="Добавить место"></button>
+    </section>
 
-      <section>
-        <ul class="elements">
-          <template id="photo" class="card">
-            <li class="element">
-              <div class="element__image-box">
-                <img src="#" alt="beautiful place photo" class="element__image">
-                <button type="button" class="element__remove-button">
-<!--                  <img src="images/element-removeButton.svg" alt="Удалить">-->
-                  <img src="<%=require('./images/element-removeButton.svg')%>" alt="Удалить">
-                </button>
-              </div>
-              <div class="element__text-box">
+
+    <ul class="elements">
+    </ul>
+    <div class="popup popup_use_edit-profile">
+        <div class="popup__content">
+            <form class="form form_function_edit-profile" name="Edit-profile-form" novaidate>
+                <h2 class="form__title">Редактировать профиль</h2>
+                <fieldset class="form__container">
+                    <input class="form__input" type="text" name="username" id="username" minlength="2" maxlength="40"
+                           required>
+                    <span class="form__input-error-message username-error"></span>
+                    <input class="form__input" type="text" name="bio" id="bio" minlength="2" maxlength="200" required>
+                    <span class="form__input-error-message bio-error"></span>
+                    <button type="submit" class="form__submit-button" id="submit-profile-info">Сохранить</button>
+                </fieldset>
+            </form>
+            <button type="button" class="close-icon" id="close-popup-edit-profile" aria-label="Закрыть"></button>
+        </div>
+    </div>
+
+    <div class="popup popup_use_add-photo">
+        <div class="popup__content">
+            <form class="form form_function_add-photo" name="Add-new-location-photo" novalidate>
+                <h2 class="form__title">Новое место</h2>
+                <fieldset class="form__container">
+                    <input class="form__input" type="text" name="name" id="location-name" placeholder="Название"
+                           minlength="2" maxlength="30" required>
+                    <span class="form__input-error-message location-name-error"></span>
+                    <input class="form__input" type="url" name="link" id="photo-url" placeholder="Ссылка на картинку"
+                           required>
+                    <span class="form__input-error-message photo-url-error"></span>
+                    <button type="submit" class="form__submit-button" id="submit-photo-info">Создать</button>
+                </fieldset>
+            </form>
+            <button type="button" class="close-icon" id="close-popup-add-photo" aria-label="Закрыть"></button>
+        </div>
+    </div>
+
+    <div class="popup popup_use_update-avatar-image">
+        <div class="popup__content">
+            <form class="form form_function_update-avatar-image" name="Update-avatar-image" novalidate>
+                <h2 class="form__title">Обновить аватар</h2>
+                <fieldset class="form__container">
+                    <input class="form__input" type="url" name="link" id="avatar-image-url"
+                           placeholder="Ссылка на фотографию" required>
+                    <span class="form__input-error-message avatar-image-url-error"></span>
+                    <button type="submit" class="form__submit-button" id="submit-update-avatar-image">Сохранить</button>
+                </fieldset>
+            </form>
+            <button type="button" class="close-icon" id="close-popup-update-avatar-image" aria-label="Закрыть"></button>
+        </div>
+    </div>
+
+    <div class="popup popup_use_view-full-photo">
+        <div class="popup__full-photo-container">
+            <img class="popup__full-photo" src="#" alt="#">
+            <p class="popup__full-photo-title"></p>
+            <button type="button" class="close-icon" id="close-popup-view-full-photo" aria-label="Закрыть"></button>
+        </div>
+    </div>
+
+    <div class="popup popup_use_confirm-remove-photo">
+        <div class="popup__content">
+            <form class="form form_function_confirm-remove-photo" name="Confirm-remove-photo" novalidate>
+                <h2 class="form__title">Вы уверены?</h2>
+                <fieldset class="form__container form__container_content_submit-button-only">
+                    <button type="submit" class="form__submit-button" id="submit-confirm-remove-photo">Да</button>
+                </fieldset>
+            </form>
+            <button type="button" class="close-icon" id="close-popup-confirm-remove-photo"
+                    aria-label="Закрыть"></button>
+        </div>
+    </div>
+
+</main>
+<footer class="footer project-area__section-position">
+    <p class="footer__copyright">&copy; 2021 Mesto Russia AgeevDmitryMinsk</p>
+</footer>
+<section>
+    <template id="photo">
+        <li class="element">
+            <img class="element__photo">
+            <button type="button" class="element__delete-button" aria-label="Удалить фотографию"></button>
+            <div class="element__info">
                 <h2 class="element__title"></h2>
-<!--                <button type="button" class="element__button-like"><img src="images/element-like.svg" alt="Нравится"></button>-->
-                <button type="button" class="element__button-like"><img src="<%=require('./images/element-like.svg')%>" alt="Нравится"></button>
-              </div>
-            </li>
-          </template>
-        </ul>
-      </section>
+                <div class="element__like-counter">
+                    <button type="button" class="element__like-button"
+                            aria-label="Отметить фотографию как понравившуюся"></button>
+                    <p class="element__like-number"></p>
+                </div>
+            </div>
+        </li>
+    </template>
+</section>
 
-    </main>
-
-    <footer class="footer">
-      <p class="footer__copyright">&copy; 2020 Mesto Russia Ageev Dmitry</p>
-    </footer>
-  </div>
-
-  <section class="popup profile-popup">
-    <!--В каждом попапе должен быть класс popup,  а рядом с ним через пробел можно указать еще один класс для точного
-     поиска его в DOM: popup profile-popup / Gennadiy Barsegyan, ревьюер - 1е ревью 5я ПР   -->
-    <div class="popup__container">
-      <button type="button" class="popup__button-close">
-<!--        <img src="images/popup-closeButton.svg" alt="Закрыть" class="popup__button-image">-->
-        <img src="<%=require('./images/popup-closeButton.svg')%>" alt="Закрыть" class="popup__button-image">
-      </button>
-      <div class="popup__form-box">
-        <h2 class="popup__title">Редактировать профиль</h2>
-        <form class="popup__form" name="userData" novalidate> <!--стандартные сообщения об ошибке не нужны для этого атрибут novalidate -->
-          <input 
-          required
-          type="text"
-          name="username"
-          placeholder="Имя"
-          minlength="2"
-          maxlength="40"
-          id="username"  class="popup__input popup__input_data_name">
-          <span id="username-error" class="popup__input-error">невидимое сообщение об ошибке opacity=0</span>
-           <input
-           required
-           type="text"
-           name="bio"
-           placeholder="О себе"
-           minlength="2"
-           maxlength="200"
-           id="bio"
-           class="popup__input popup__input_data_about-yourself">
-           <span id="bio-error" class="popup__input-error">невидимое сообщение об ошибке opacity=0</span>
-           <button type="submit" class="popup__button">Сохранить</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <section class="popup profile-popup popup_content_add-element">
-    <div class="popup__container popup__container_place_add-element">
-      <button type="button" class="popup__button-close popup__button-close_place_add-element">
-<!--        <img src="images/popup-closeButton.svg" alt="Закрыть" class="popup__button-image">-->
-        <img src="<%=require('./images/popup-closeButton.svg')%>" alt="Закрыть" class="popup__button-image">
-      </button>
-      <div class="popup__form-box popup__form-box_place_add-element">
-        <h2 class="popup__title popup__title_place_add-element">Новое место</h2>
-        <form name="NewElement" class="popup__form popup__form_place_add-element" novalidate>
-          <input 
-          required
-          type="text"
-          name="name"
-          placeholder = "Название"
-          minlength="2"
-          maxlength="30"
-          id="title-card"
-          class="popup__input popup__input_data_title">
-          <span id="title-card-error" class="popup__input-error">невидимое сообщение об ошибке opacity=0</span>
-          <input 
-          required
-          type="url"
-          name="link"
-          placeholder = "Ссылка на картинку"
-          id="link-card"
-          class="popup__input popup__input_data_link">
-          <span id="link-card-error" class="popup__input-error">невидимое сообщение об ошибке opacity=0</span>
-          <button type="submit" class="popup__button popup__button_place_add-element">Создать</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <section class="popup profile-popup popup_place_image-popup">
-    <div class="popup__container popup__container_place_image-popup">
-      <button type="button" class="popup__button-close  popup__button-close_place_image-popup">
-<!--        <img src="images/popup-closeButton.svg" alt="Закрыть" class="popup__button-image">-->
-        <img src="<%=require('./images/popup-closeButton.svg')%>" alt="Закрыть" class="popup__button-image">
-      </button>
-      <figure class="popup__content-box">
-        <img src="#" alt="beautiful place photo XXL" class="popup__image">
-        <figcaption class="popup__caption"></figcaption>
-      </figure> 
-    </div>
-  </section>
-
-
-<!--  <script type="module" src="./pages/index.js"></script>-->
 </body>
 </html>
