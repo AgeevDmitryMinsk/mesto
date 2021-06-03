@@ -8,7 +8,7 @@
 ##### Обзор ПР №9
 Сайт представляет собой 9ую проектную работу в рамках курса "Яндекс.Практикума" по веб-разработке, когорта 24. Это учебный проект, в котором сверстана страница профиля сервиса по публикации фотографий из путешествий. На странице присутствует информация о пользователе (фото профиля, имя, небольшая информация) и грид из фотографий. Предусматривается возможность добавить новую фотографию, удалить фотографию, просмотреть фотографию фулвью, поставить лайк, отредактировать аватарку и имя пользователя.
 
-<p align="center"><img src="https://assets.codepen.io/155666/internal/screenshots/pens/Xbaqbp.default.png?fit=cover&format=auto&ha=true&height=540&quality=75&v=2&version=1523921992&width=960" width="300" alt="spinner"></p>
+<p align="center"><img src="https://yandex.by/images/search?p=1&text=spinner+js&pos=63&rpt=simage&img_url=https%3A%2F%2Fsun9-3.userapi.com%2Fc854328%2Fv854328094%2F1e9f6b%2FrJrE1EEJisI.jpg&from=tabbar" width="300" alt="spinner"></p>
 
 
 
