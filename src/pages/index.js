@@ -1,3 +1,4 @@
+const spinner = document.querySelector('.spinner');
 import {
     clickAddPhoto,
     clickAvatarImage,
@@ -22,7 +23,6 @@ import PopupWithForm from '../components/PopupWithForm.js'
 import UserInfo from '../components/UserInfo.js'
 import Api from '../components/Api.js'
 import './index.css'
-
 import PopupWithConfirmation from '../components/PopupWithConfirmation.js'
 
 //Создаю экземляр класса Api 
@@ -37,14 +37,14 @@ const api = new Api({
 let userID
 
 api.getDataForPageRender()
-    .then((args) => {
-        const [initialCardsData, userData] = args;
+    .then((argums) => {
+        const [initialCardsData, userData] = argums;
         userinfo.setUserInfo(userData);
         userID = userData._id;
         renderGallery.renderItems(initialCardsData)
     })
-    .catch((err) => {
-        console.log(err);
+    .catch((error) => {
+        console.log(error);
     })
 
 //Создаю попап с фото фулвью (экземпляр PopupWithImage), добавляю ему слушателей
@@ -64,16 +64,16 @@ const createCard = (item) => {
         () => {
             api.likeCard(item.id)
                 .then((item) => newPhoto.setLikesInfo(item.likes))
-                .catch((err) => {
-                    console.log(err);
+                .catch((error) => {
+                    console.log(error);
                 })
         },
 
         () => {
             api.dislikeCard(item.id)
                 .then((item) => newPhoto.setLikesInfo(item.likes))
-                .catch((err) => {
-                    console.log(err);
+                .catch((error) => {
+                    console.log(error);
                 })
         },
 
@@ -83,7 +83,7 @@ const createCard = (item) => {
                     api.deleteCard(item.id)
                         .then(() => newPhoto.deleteButtonClicked())
                         .then(() => popupConfirmCardRemoval.close())
-                        .catch(err => console.error(err))
+                        .catch(error => console.error(error))
                 }
             )
             popupConfirmCardRemoval.open();
@@ -119,6 +119,8 @@ formAddPhotoValidated.enableValidation();
 const popupAddPhotoForm = new PopupWithForm(
     '.popup_use_add-photo',
     () => {
+        console.log(`isLoading true`);
+        // spinner.style.display = 'block';
         dataSubmitting(formAddPhoto, true)
         api.addNewCard(newPhotoName.value, newPhotoURL.value)
             .then((item) => {
@@ -132,8 +134,8 @@ const popupAddPhotoForm = new PopupWithForm(
                 renderGallery.addItem(newPhotoAdded, false)
             })
             .then(() => popupAddPhotoForm.close())
-            .catch((err) => {
-                console.log(err);
+            .catch((error) => {
+                console.log(error);
             })
             .finally(() =>
                 dataSubmitting(formAddPhoto, false, 'Создать'))
@@ -166,8 +168,8 @@ const popupEditProfileInfo = new PopupWithForm(
                 userinfo.setUserInfo(userData)
             })
             .then(() => popupEditProfileInfo.close())
-            .catch((err) => {
-                console.log(err);
+            .catch((error) => {
+                console.log(error);
             })
             .finally(() =>
                 dataSubmitting(formEditProfile, false, 'Сохранить'))
@@ -204,10 +206,10 @@ const popupChangeAvatarImage = new PopupWithForm(
                 userinfo.setUserInfo(userData)
             })
             .then(() => popupChangeAvatarImage.close())
-            .catch((err) => {
-                console.log(err);
+            .catch((error) => {
+                console.log(error);
             })
-            .finally(() => dataSubmitting(formChangeAvatar, false, 'Сохранить'))
+            .finally(() => dataSubmitting(formChangeAvatar, false, 'Сохранено'))
     },
     '.form__container'
 )
@@ -239,9 +241,11 @@ popupConfirmCardRemoval.setEventListeners();
 function dataSubmitting(form, isLoading, copy) {
     const submitButton = form.querySelector('.form__submit-button')
     if (isLoading) {
+        spinner.classList.add('spinner_visible');
         submitButton.textContent = 'Cохранение...';
         submitButton.setAttribute('disabled', true);
     } else if (!isLoading) {
+        spinner.classList.remove('spinner_visible');
         submitButton.textContent = copy;
         submitButton.removeAttribute('disabled');
     }

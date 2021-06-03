@@ -20,7 +20,17 @@ const formConfig = {
 }
 
 export {
-    photoGallery, clickEditButton, newUsername, newBio,
-    formEditProfile, clickAddPhoto, formAddPhoto, formConfig, clickAvatarImage, formChangeAvatar,
-    newPhotoName, newPhotoURL, newAvatarURL
+    photoGallery,
+    clickEditButton,
+    newUsername,
+    newBio,
+    formEditProfile,
+    clickAddPhoto,
+    formAddPhoto,
+    formConfig,
+    clickAvatarImage,
+    formChangeAvatar,
+    newPhotoName,
+    newPhotoURL,
+    newAvatarURL
 }

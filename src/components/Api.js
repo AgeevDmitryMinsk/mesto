@@ -1,21 +1,21 @@
 export default class Api {
     constructor(options) {
-        this._url = options.url,
-            this._headers = options.headers
+        this._url     = options.url;
+        this._headers = options.headers
     }
 
-    _getResponseData(res) {
-        if (!res.ok) {
-            return Promise.reject(`Ошибка: ${res.status}`);
+    _getResponseData(result) {
+        if (!result.ok) {
+            return Promise.reject(`Ошибка: ${result.status}`);
         }
-        return res.json();
+        return result.json();
     }
 
     getInitialCards() {
         return fetch(`${this._url}cards`, {
             headers: this._headers,
         })
-            .then(res => this._getResponseData(res)
+            .then(result => this._getResponseData(result)
             );
     }
 
@@ -25,7 +25,7 @@ export default class Api {
             headers: this._headers,
             body: JSON.stringify({name: newPhotoName, link: newPhotoURL}),
         })
-            .then(res => this._getResponseData(res)
+            .then(result => this._getResponseData(result)
             );
     }
 
@@ -34,7 +34,7 @@ export default class Api {
             method: "DELETE",
             headers: this._headers,
         })
-            .then(res => this._getResponseData(res)
+            .then(result => this._getResponseData(result)
             );
     }
 
@@ -43,7 +43,7 @@ export default class Api {
             method: "PUT",
             headers: this._headers,
         })
-            .then(res => this._getResponseData(res)
+            .then(result => this._getResponseData(result)
             );
     }
 
@@ -52,7 +52,7 @@ export default class Api {
             method: "DELETE",
             headers: this._headers,
         })
-            .then(res => this._getResponseData(res)
+            .then(result => this._getResponseData(result)
             );
     }
 
@@ -62,17 +62,17 @@ export default class Api {
             headers: this._headers,
             body: JSON.stringify({avatar: avatarURL})
         })
-            .then(res => this._getResponseData(res)
+            .then(result => this._getResponseData(result)
             );
 
     }
 
-    getUserData(data) {
+    getUserData() {
         return fetch(`${this._url}users/me/`, {
             method: "GET",
             headers: this._headers,
         })
-            .then(res => this._getResponseData(res)
+            .then(result => this._getResponseData(result)
             );
     }
 
@@ -82,7 +82,7 @@ export default class Api {
             headers: this._headers,
             body: JSON.stringify({name: newUsername, about: newBio})
         })
-            .then(res => this._getResponseData(res)
+            .then(result => this._getResponseData(result)
             );
     }
 
@@ -95,7 +95,7 @@ export default class Api {
             method: "GET",
             headers: this._headers,
         })
-            .then(res => this._getResponseData(res)
+            .then(result => this._getResponseData(result)
             );
     }
 }

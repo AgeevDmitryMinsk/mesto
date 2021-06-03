@@ -50,15 +50,18 @@
         </div>
     </div>
 
+
     <div class="popup popup_use_add-photo">
         <div class="popup__content">
             <form class="form form_function_add-photo" name="Add-new-location-photo" novalidate>
                 <h2 class="form__title">Новое место</h2>
                 <fieldset class="form__container">
+                    <div class="spinner"><i></i></div>
                     <input class="form__input" type="text" name="name" id="location-name" placeholder="Название"
                            minlength="2" maxlength="30" required>
                     <span class="form__input-error-message location-name-error"></span>
-                    <input class="form__input" type="url" name="link" id="photo-url" placeholder="Ссылка на картинку"
+                    <input class="form__input" type="url" name="link" id="photo-url"
+                           placeholder="Ссылка на картинку"
                            required>
                     <span class="form__input-error-message photo-url-error"></span>
                     <button type="submit" class="form__submit-button" id="submit-photo-info">Создать</button>
@@ -66,6 +69,7 @@
             </form>
             <button type="button" class="close-icon" id="close-popup-add-photo" aria-label="Закрыть"></button>
         </div>
+
     </div>
 
     <div class="popup popup_use_update-avatar-image">
@@ -76,10 +80,12 @@
                     <input class="form__input" type="url" name="link" id="avatar-image-url"
                            placeholder="Ссылка на фотографию" required>
                     <span class="form__input-error-message avatar-image-url-error"></span>
-                    <button type="submit" class="form__submit-button" id="submit-update-avatar-image">Сохранить</button>
+                    <button type="submit" class="form__submit-button" id="submit-update-avatar-image">Сохранить
+                    </button>
                 </fieldset>
             </form>
-            <button type="button" class="close-icon" id="close-popup-update-avatar-image" aria-label="Закрыть"></button>
+            <button type="button" class="close-icon" id="close-popup-update-avatar-image"
+                    aria-label="Закрыть"></button>
         </div>
     </div>
 
