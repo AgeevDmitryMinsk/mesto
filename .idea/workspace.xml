@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b443b5f5-20b0-4463-8814-601f40464efd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +138,7 @@
       <workItem from="1622541346847" duration="1872000" />
       <workItem from="1622551583075" duration="2671000" />
       <workItem from="1622616627234" duration="17693000" />
-      <workItem from="1622700655880" duration="22843000" />
+      <workItem from="1622700655880" duration="23281000" />
     </task>
     <task id="LOCAL-00001" summary="внес изменения в read.me 20-04-21">
       <created>1618940524324</created>
