@@ -3,7 +3,7 @@
 ### Проектная работа №9.
 #### Исполнитель                                  *Агеев Дмитрий* 
 
-<p align="center"><img src="https://scontent.fmsq2-1.fna.fbcdn.net/v/t1.6435-9/127142444_1292068024474820_2603593254457549792_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=174925&_nc_ohc=kkFNAGS6KVoAX8jdbXL&_nc_ht=scontent.fmsq2-1.fna&oh=44f69775b3960acc96193af35fcea181&oe=60D100D9" width="200" alt="Агеев Дмитрий"></p>
+<p align="center"><img src="https://avatars.githubusercontent.com/u/51228454?v=4" width="200" alt="Агеев Дмитрий"></p>
 
 
 
